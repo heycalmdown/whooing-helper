@@ -82,8 +82,8 @@ function parseAmount(text: string) {
 
 async function login(page: puppeteer.Page) {
   await page.goto('https://www.kurly.com/shop/mypage/mypage_orderlist.php', { waitUntil: 'networkidle0'});
-  await page.type('#form > input[type=text]:nth-child(4)', process.env.KURLY_ID!, { delay: 100 });
-  await page.type('#form > input[type=password]:nth-child(5)', process.env.KURLY_PW!, { delay: 100 });
+  await page.type('#form > input[type=text]:nth-child(5)', process.env.KURLY_ID!, { delay: 100 });
+  await page.type('#form > input[type=password]:nth-child(6)', process.env.KURLY_PW!, { delay: 100 });
   await page.click('#form > button', { delay: 100 });
   await page.waitForNavigation({ waitUntil: 'networkidle2' })
 }

@@ -3,8 +3,8 @@ import puppeteer from 'puppeteer';
 import { reformat, reorder } from './naverpay'
 
 (async () => {
-  const targetDate = new Date('2021.10.30')
-  const targetAmount = 16500;
+  const targetDate = new Date('2022.03.03')
+  const targetAmount = 100;
 
   const browser = await puppeteer.launch({
     headless: false,

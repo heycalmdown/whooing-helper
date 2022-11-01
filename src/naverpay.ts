@@ -30,6 +30,7 @@ function merchantToWhooing(merchant: string): string {
         case '프로젝트21': return '콩빈두+ 네이버페이포인트- 콩빈두 건강';
         case '3651': return '콩빈두+ 네이버페이포인트- 콩빈두 습식';
         case 'PETHROOM': return '콩빈두+ 네이버페이포인트- 콩빈두 모래';
+        case '펫프렌즈': return '콩빈두+ 네이버페이포인트- 콩빈두 용품';
         case '베츠': return '콩빈두+ 네이버페이포인트- 콩빈두 건강(영양제)';
         case 'THESUJATA': return '미용+ 네이버페이포인트- 염색약';
         case '수자타헤나': return '미용+ 네이버페이포인트- 염색약';

@@ -1,1 +1,2 @@
-pbpaste | node dist/index.js coupang | pbcopy
+pbpaste | ts-node src/index.ts coupang | pbcopy
+# pbpaste | ts-node src/index.ts coupang

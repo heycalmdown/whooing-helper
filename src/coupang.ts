@@ -16,19 +16,21 @@ export function parseType(line: string): string {
     if (line.includes('충전')) return '충전';
     if (line.includes('결제')) return '결제';
     if (line.includes('취소')) throw new Error('취소건 해결 필요');
+    console.log(line)
     throw new Error('알 수 없는 타입');
 }
 
 export function typeToWhooing(t: string): string {
     switch (t) {
         case '결제': return '기타+ 소쿠페이머니- ?';
-        case '충전': return '소쿠페이머니+ 소하나- 쿠페이 충전';
+        case '충전': return '소쿠페이머니+ 소토뱅- 쿠페이 충전';
         case '인출': return '소하나+ 소쿠페이머니- 쿠페이 인출';
     }
     throw new Error('알 수 없는 타입');
 }
 
 export function reformat(cols: string[]): string[] {
+    // console.log(cols)
     const t = parseType(cols[0]);
     const p = price(cols[0]);
     const remains = cols[1];
